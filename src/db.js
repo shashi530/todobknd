@@ -1,6 +1,6 @@
 // require("dotenv").config();
 const mongoose = require("mongoose");
-const URL = "mongodb+srv://shashipatil:shashi530@cluster0.hum9krc.mongodb.net/?retryWrites=true&w=majority"
+const URL = ("mongodb://localhost:27017/todo")
 module.exports = () => {
   return mongoose.connect(URL);
 };
